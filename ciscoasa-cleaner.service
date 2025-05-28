@@ -1,0 +1,12 @@
+[Unit]
+Description=Cisco ASA Log Cleaner
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/ciscoasa_cleaner.sh
+Restart=always
+User=soc
+WorkingDirectory=/home/soc
+
+[Install]
+WantedBy=multi-user.target
