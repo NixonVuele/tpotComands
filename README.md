@@ -5,6 +5,7 @@ git hub
 git clone https://github.com/telekom-security/tpotce
 
 debian:
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/NixonVuele/tpotComands/main/auto_installer.sh)"
 
 creacion de usuario se lo crea ocn root y luego se hace su soc
 
