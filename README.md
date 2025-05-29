@@ -18,6 +18,7 @@ iface eno1 inet static
 Creacion de un nuevo usuario:
 su root
 apt update
+apt install curl
 apt install sudo
 usermod -aG sudo soc     # enves de soc es el usuario creado en la instalacion
 problemas en la actualizacion por la diferencia de tiempo en el repo de instalacion con la fecha y hora del otorgaado por la red
