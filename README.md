@@ -1,4 +1,33 @@
+Instalacion del sistema operativo, desde el sistema operativo las maquinas que se otorgaron funcionan con mbr de formato y con la intalacion del Legacy,
+Adicionalmente es necesario darle 1gb en la particion de book /boot -crear la particion
+en la instalacion se especifico que use DHCP posteriormente se entro a los archivos del sistema a cambiarlo a estatico
+Ruta de la configuracion de las direcciones ip:
+/etc/network
+dentro de este directorio esta el archivo interfaces 
+nano /etx/network/interface
+dentro del archvio 
+auto lo
+iface io inet loopback
+auto eno1
+iface eno1 inet static
+  address 172.25.100.249
+  netmaksk 255.255.255.240
+  dns-nameservers 8.8.8.8 1.1.1.1
+
 # tpotComands
+Creacion de un nuevo usuario:
+su root
+apt update
+apt install sudo
+usermod -aG sudo soc     # enves de soc es el usuario creado en la instalacion
+problemas en la actualizacion por la diferencia de tiempo en el repo de instalacion con la fecha y hora del otorgaado por la red
+sudo date -s "2025-05-19 11:20:00" # depende del dia y la hora actual,
+sudo hwclock --systohc # comando para guardarlo  en el reloj de hadware
+su soc # volver al usuario soc - para la instalacion del tpot es oblicatorio estar en la ruta 
+/home/soc y con el tipo: usuario no como root
+
+
+
 
 Instalacion con debian
 git hub
