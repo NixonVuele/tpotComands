@@ -26,7 +26,8 @@ sudo hwclock --systohc # comando para guardarlo  en el reloj de hadware
 su soc # volver al usuario soc - para la instalacion del tpot es oblicatorio estar en la ruta 
 /home/soc y con el tipo: usuario no como root
 
-
+sudo apt install gpm
+para instalar un mouse temporal
 
 
 Instalacion con debian
