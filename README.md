@@ -33,7 +33,7 @@ para instalar un mouse temporal
 
 Instalacion con debian
 git hub
-git clone https://github.com/telekom-security/tpotce
+env bash -c "$(curl -sL https://github.com/telekom-security/tpotce/raw/master/install.sh)"
 
 debian:
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/NixonVuele/tpotComands/main/auto_installer.sh)"
