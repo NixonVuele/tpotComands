@@ -48,6 +48,13 @@ se hace bash install.sh
 luego se ingresa usuario del tpot,
 contra del tpot, 
 
+
+sudo systemctl daemon-reload sudo systemctl enable wazuh-agent sudo systemctl start wazuh-agent
+
+
+wget https://packages.wazuh.com/4.x/apt/pool/main/w/wazuh-agent/wazuh-agent_4.11.2-1_amd64.deb && sudo WAZUH_MANAGER='172.25.100.250' WAZUH_AGENT_GROUP='tpot-riesgos' WAZUH_AGENT_NAME='tpot-riesgos' dpkg -i ./wazuh-agent_4.11.2-1_amd64.deb
+
+
 para el monitoreo de la creacion de los contenedores, el ciclo de vida de la creacion de los contenedores es el siguiente
 
 sudo docker compose 0f /home/soc/tpotce/docker-compose.yml up -d
