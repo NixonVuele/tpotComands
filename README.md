@@ -30,7 +30,9 @@ su soc # volver al usuario soc - para la instalacion del tpot es oblicatorio est
 sudo apt install gpm
 para instalar un mouse temporal
 
-
+git clone https://github.com/telekom-security/tpotce
+cd tpotce/iso/installer/
+./install.sh --type=user
 Instalacion con debian
 git hub
 env bash -c "$(curl -sL https://github.com/telekom-security/tpotce/raw/master/install.sh)"
