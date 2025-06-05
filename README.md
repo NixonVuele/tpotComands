@@ -71,3 +71,8 @@ para entrar a la compuguraciones del archivo docker compose es
 este es el comando para el reicio del docker compose que permite la construccion de los microservers
 sudo docker compose -f /home/soc/tpotce/docker-compose.yml up -d
 
+# Wazuh
+sudo apt update && sudo apt install curl apt-transport-https unzip wget libcap2-bin software-properties-common lsb-release gnupg2
+curl -sO https://packages.wazuh.com/4.5/wazuh-... && chmod 744 wazuh-install.sh && bash ./wazuh-install.sh -a
+
+
